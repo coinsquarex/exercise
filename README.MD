@@ -1,13 +1,23 @@
+# Prerequisites
 
-# prerequisites
+Use the verison of node defined in `.node-version`.
 
-```bash
-nvm install 23
-nvm use 23
+## Install dependencies
 
-npm i -g @nestjs/cli
-
+```sh
+# /balance
 npm install
 
-npm run start
+# /frontend
+npm install
+```
+
+## Run the application
+
+```sh
+# /balance
+npm run start:dev
+
+# /frontend
+npm run start:dev
 ```
