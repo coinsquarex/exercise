@@ -1,0 +1,35 @@
+.table {
+  --light: rgb(192 192 255 / 0.625);
+  --dark: rgb(0 0 255 / 0.375);
+
+  --border-color: currentcolor;
+
+  border: 0.125rem solid var(--border-color);
+  border-radius: 0.5rem;
+
+  .tbody {
+    border-top: 0.125rem solid var(--border-color);
+  }
+
+  .tr {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    &:not(:first-child) {
+      border-top: 0.0625rem solid var(--border-color);
+    }
+  }
+
+  .th,
+  .td {
+    padding: 1rem;
+
+    &:not(:first-child) {
+      border-left: 0.0625rem solid var(--border-color);
+    }
+  }
+
+  .th {
+    font-weight: bold;
+  }
+}
